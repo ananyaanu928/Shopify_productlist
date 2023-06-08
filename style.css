@@ -131,50 +131,181 @@ h1{
 h2{
   margin-bottom: 35px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Roboto:wght@900&display=swap');
+.product_container{
+  display:flex;
+  margin-left: 137px;
+  flex-wrap:wrap;
+  width: 77%;
+  justify-content:center;
+  border: 1px solid lightgrey;
+  background-color: #fc2968;
+} 
+.product_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 18px;
+  background-color: white; 
+}
+
+.product_image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product_details {
+  font-size: 0.875rem;
+  margin: 10px 0;
+  text-align: center;
+  color: grey;
+}
+
+.product_price {
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 30px;
+  background-color: #fc2968;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.product_price:hover {
+  background-color: #fc2947;
+}
+
+.insidebutton{
+  margin: 0;
+  padding: 5px 30px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  font-size: 1.125rem;
+  border-radius: 18px;
+  background-color: rgba(255, 0, 0, 0.847);
+  color: white;
+}
+
+.product_container1{
+  display:flex;
+  flex-wrap:wrap;
+  width: 95%;
+  border: 0.5px solid lightgrey;
+  background-color: whitesmoke;
+  margin-bottom: 13px;
+  border-radius: 15px;
+} 
+.product_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  overflow: hidden;
+  margin: 18px;
+
+}
+.product_container1 .product_items .product_image1{
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 0.875rem;
+}
+
+.discount-price {
+  color: black;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: #fc2968;
+}
+.product_container1 .product_items  h3{
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+
+.navi{
+  padding-left: 0;
+  width: 80%; 
+    display: flex; 
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.navi .navimage{
+  padding-right: 7px;
+}
+.navi li{
+  font-size: 25px;
+}
+.product_container1 .product_items .navi img{
+  width: 25px;
+  border-radius: 20px;
+}
+h2{
+  margin-bottom: 35px;
+}
 @media (max-width: 740px){
-  .product_container{
-    margin-left: 38px;
-    width: 100%;
+  .product_container {
+    margin: 0;
+    width: 78%;
   } 
   .product_cart {
-    width: 100px;
-    margin: 7px;
+    width: 89px;
+    height: 120px;
+    margin: 3px;
   }
   .product_image {
-    width: 40%;
-    height: 120px;
-  }
-  
-  .product-name {
-    font-size: 1rem;
-    margin: 7px 0;
+    width: 95%;
+    height: 67px;
   }
   
   .product_details {
-    font-size: 0.575rem;
-    margin: 7px 0;
+    font-size: 0.57rem;
+    margin: 3px 0;
   }
   .product_price {
-    margin-top: 7px;
+    margin-top: 4px;
     padding-left: 3px;
-    padding-right: 23px;
-    font-size: 15px;
+    padding-right: 16px;
+    font-size: 10px;
   } 
-  .insidebutton{
-    padding: 3px 23px;
-    font-size: 1rem;
-  }
   .product_container1{
     width: 95%;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   } 
   .product_items {
     width: 50px;
-    margin: 7px;
-  
+    height: 75px;
+    margin: 3px;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  .product_container1 .product_items  h3{
+    font-size: 8px;
+    margin-bottom: 2px;
+    margin-top: 2.5px;
+  }
+  .insidebutton{
+    padding: 1px 9px;
+    font-size: 0.5rem;
   }
   .product_container1 .product_items .product_image1{
-    width: 50%;
+    width: 40%;
     height: 40px;
   }
   .original-price {
@@ -182,29 +313,20 @@ h2{
   }
   
   .discount-price {
-    font-size: 1rem;
+    font-size: 0.69rem;
   }
-  .product_container1 .product_items  h3{
-    font-size: 18px;
-    margin-bottom: 3px;
-    margin-top: 2.5px;
-  }
-  
   .navi{
-      width: 50%; 
-      margin-bottom: 15px;
-      margin-top: 23px;
+    width: 100%;
+    margin-bottom: 12.5px;
+    margin-top: 9px;
   }
   .navi .navimage{
-    padding-right: 5px;
-  }
-  .navi li{
-    font-size: 18px;
+    padding-right: 2px;
   }
   .product_container1 .product_items .navi img{
-    width: 18px;
+    width: 9px;
   }
-  h2{
-    margin-bottom: 25px;
+  .navi li{
+    font-size: 11px;
   }
 }
